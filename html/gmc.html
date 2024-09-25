@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./../css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <title>Responsive Website</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  </head>
+  <body>
+    <div class="navbar-parent">
+      <nav class="navbar navbar-expand-lg navbar-dark px-0 py-3 position-fixed z-3 w-100">
+          <div class="container-xl mx-auto w-100" style="max-width: 89%;">
+            <!-- Logo -->
+            <a class="navbar-brand" href="/html/homepage.html">
+              <img src="./../asset/image/umraweblogo.png" class="nav-logo-custom" alt="NavLogo">
+            </a>
+            <!-- Navbar toggle -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- Collapse -->
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+              <!-- Nav -->
+              <div class=" navbar-nav mx-lg-auto text-white fon-bold"  style="gap: 14px; font-weight: 600; font-size: 14.5 px;" >
+                  <a class="nav-item nav-link" href="/html/homepage.html" data-href="/html/homepage.html" aria-current="page">Home</a>
+                  <a class="nav-item nav-link" href="/html/hyundai.html" data-href="/html/hyundai.html">H1</a>
+                  <a class="nav-item nav-link" href="#" data-href="#">GMC</a>
+                  <a class="nav-item nav-link" href="#" data-href="#">Hiace</a>
+                  <a class="nav-item nav-link" href="#" data-href="#">Camry</a>
+                  <a class="nav-item nav-link" href="#" data-href="#">Innova</a>
+                  <a class="nav-item nav-link" href="#" data-href="#">All Cars</a>
+                  <a class="nav-item nav-link" href="/html/myaccount.html" data-href="/html/myaccount.html">My account</a>
+              </div>
+              <div class="nav-button-custom topBotomBordersOut ms-lg-4">
+                <a style="font-weight: 400 !important;" class="nav-item nav-link" href="#" data-href="#">Contact Us</a>
+            </div>
+            
+          </div>
+            </div>
+          </div>
+
+
+<div class="content-area">
+  <h1>gmc</h1>
+</div>
+
+<div class="floating-buttons">
+  <!-- WhatsApp Button -->
+  <a href="https://wa.me/966594741562" target="_blank" class="btn-whatsapp">
+    <i class='fab fa-whatsapp whatsapp-icon' style='font-size:35px;color:white; background-color:#25d366; padding:15px; border-radius:50%; padding-top: 13px; width: 60px; height: 60px;'></i>
+
+  </a>
+
+</div>
+
+<div id="storeSidebar" class="store-sidebar">
+  <a href="javascript:void(0)" class="closebtn" onclick="openStoreSidebar()">&times;</a> <!-- Close button -->
+  <h2>Your Cart</h2>
+  <a href="#">Your cart is empty</a>
+  <a href="#">Return to Shop</a>
+  <div class="position-fixed bottom-0">
+<button class="w-100 text-white" style="background-color: var(--secondary-color); color: white;" >Continue Shopping</button>
+</div>
+</div>
+
+<!-- Store Button (shopping icon) -->
+<div class="floating-store-container">
+  <a href="javascript:void(0)" id="storeBtn" class="store-btn" onclick="openStoreSidebar()">
+    <i class="fa-solid fa-basket-shopping"></i>
+      <span class="badge">0</span>
+  </a>
+</div>
+
+<!-- Footer Start -->
+<div class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 col-lg-4">
+          <div class="footer-about d-flex flex-column">
+<img src="./../asset/image/umrafooterlogo.png" alt="footer-nav" class="mx-auto mb-3">
+            <p style="color: var(--secondary-color); margin-bottom: 6px;" class="text-center" >
+                Umra Cab VIP offers safe, reliable Umrah taxi services for pilgrims visiting the holy cities of Mecca and Medina for Umrah.            </p>
+                <div class="icons text-center d-flex justify-content-center align-items-center" style="gap: 20px;">
+                  <a href="#"><i class="fab fa-facebook-f" style="font-size:20px; margin-top: 5px; color: var(--secondary-color);"></i></a>
+                  <div class="icon-image-custom">
+                  <a href="#"> <img src="./../asset/image/twitter.png" style="width: 18px;"></a> 
+                </div>
+                  <a href="#"><i class="fab fa-google" style="font-size:20px; margin-top: 5px; color: var(--secondary-color); "></i></a>
+                  <a href="#"><i class="fab fa-instagram" style="font-size:20px; margin-top: 5px; color: var(--secondary-color);"></i></a>
+              </div>
+              
+              
+                
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-8">
+          <div class="row">
+            <div class="col-md-6 col-lg-4">
+              <div class="footer-link">
+                <h3>Vehicles</h3>
+                <a href="">Toyota Hiace 10 Seater</a>
+                <a href="">GMC SUV 7 Seater </a>
+                <a href="">H1 Hyundai 7 Seater</a>
+                <a href="">Toyota Cmary 4 Seater</a>
+                <a href="">Toyota Innova 7 Seter</a>
+                <a href="">View All Vehicle</a>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <div class="footer-link">
+                <h3>Quick Links</h3>
+                <a href="">Home</a>
+                <a href="">My Account</a>
+                <a href="">Checkout</a>
+                <a href="">About Us</a>
+                <a href="">Contact Us</a>
+                <a href="">Our Cabs</a>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <div class="footer-contact">
+                <h3>Contact Us:</h3>
+                <p>umracabvip@gmail.com <span class="text-white">+966594741562</span></p>
+                <p class="text-white"><span style="color: var(--secondary-color);">Developer Support:</span> info@boxygen.pk</p>
+                <p><span style="color: var(--secondary-color);">© UmraCab.VIP Developed By </span><span class="text-white" >Boxygen</span> <span style="color: var(--secondary-color);">Powered By </span><span class="text-white" >Woopify</span> 
+                </p>
+             
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  
+  <!-- Footer End -->
+  <script src="./../js/index.js"></script>
+  <!-- Keep the Font Awesome Kit (latest version) -->
+  <script src="https://kit.fontawesome.com/66aa7c98b3.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+  </body>
+</html>

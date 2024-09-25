@@ -1,0 +1,1061 @@
+:root{
+    --primary-color:#efa008;
+    --secondary-color:#000000;
+    --font-family-default:'Poppins',sans-serif;
+}
+
+body{
+    font-family:var( --font-family-default) !important ;
+}
+.navbar {
+    background-color: var(--secondary-color);
+    border-bottom:2px solid var(--primary-color);
+}
+.nav-logo-custom{
+    width: 150px;
+}
+.navbar-nav{
+  grid-area: 20px !important;
+}
+.navbar-nav .nav-link {
+  position: relative; /* Necessary for positioning the pseudo-element */
+  text-decoration: none; /* Remove default underline */
+  color: white; /* Default text color */
+  transition: color 0.3s; /* Smooth color transition */
+  padding-bottom: 5px; /* Add padding to create space for the underline */
+}
+
+.nav-button-custom a{
+  background-color: var(--primary-color);
+  padding: 15px;
+  width: 150px;
+  color: var(--secondary-color);
+  text-align: center;
+  border-radius: 25px;
+}
+.navbar-nav .nav-link::after {
+  content: ''; /* Create a pseudo-element for the underline */
+  display: block;
+  width: 0; /* Start with a width of 0 */
+  height: 2px; /* Height of the underline */
+  background: var(--primary-color); /* Color of the underline */
+  transition: width 0.3s; /* Smooth transition for width */
+  position: absolute;
+  left: 50%; /* Center the underline */
+  bottom: 0; /* Position it below the text */
+  transform: translateX(-50%); /* Adjust to center it */
+}
+
+.navbar-nav .nav-link:hover::after,
+.navbar-nav .nav-link.active::after {
+  width: 100%; /* Full width on hover or when active */
+}
+
+.navbar-nav .nav-link:hover {
+  color: #ccc; /* Change text color on hover */
+}
+
+
+.page-footer {
+  position: fixed;
+  right: 0;
+  bottom: 50px;
+  display: flex;
+  align-items: center;
+  padding: 5px;
+  z-index: 1;
+}
+
+.page-footer a {
+  display: flex;
+  margin-left: 4px;
+}
+.content-area {
+    min-height: calc(100vh - 102px - 342px);
+}
+.last-container-content h5{
+  font-weight: 600;
+  text-transform: uppercase;
+  font-family: 'Inter', sans-serif !important;
+  font-size: 20px;
+  color:var(--primary-color);
+}
+.last-container-content h6{
+  font-weight: 700;
+  font-size: 45px;
+  font-family: 'Inter', sans-serif !important;
+  color: #FFFFFF ;
+  line-height: 1.2em;
+}
+
+.nav-button-custom a {
+  color:var(--secondary-color);
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 600;
+  padding: 10px 20px;
+  position: relative;
+  z-index: 0;
+  cursor: pointer;
+  display: inline-block;
+  overflow: hidden; /* Ensure the background doesn't overflow */
+}
+
+/* Top and Bottom borders come in */
+.nav-button-custom a:before, 
+.nav-button-custom a:after {
+  position: absolute;
+  left: 21px;
+  width: 73%;
+  height: 1px;
+  background: var(--secondary-color);
+  content: "";
+  margin: 1px 0px;
+  opacity: 0;
+  transition: all 0.3s;
+  margin: auto;
+}
+.postcard-img {
+  height: 200px;
+  object-fit: cover;
+  /* Adjusted clip-path for a curved shape */
+  clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+}
+.postcard-date {
+  font-size: 0.85rem;
+  color: #999;
+}
+.postcard-title {
+  font-weight: bold;
+  line-height: 1.5em;
+  color: var(--secondary-color);
+  font-size: 1.25rem;
+}
+.postcard-desc {
+  font-size: 0.95rem;
+  color: #5e6568 !important;
+}
+.postcard-body{
+ margin: auto;
+ width: 100%;
+ max-width: 83%; 
+}
+.read-more {
+  font-weight: bold;
+  color:var(--secondary-color);
+  text-decoration: none;
+}
+@media (max-width:680px){
+  .taxi-striplogo img{
+    width: 100%;
+  }
+}
+.hero-third-section-content h6{
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 20px;
+  line-height: 24.2px;
+}
+.hero-third-section-content h1{
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 1.3em;
+}
+.hero-third-section-content p{
+  font-size: 17px;
+  color: var(--secondary-color);
+}
+
+/* Top and Bottom borders come in */
+.footer-button-custom a:before, 
+.footer-button-custom a:after {
+  position: absolute;
+  left: 80px;
+  width: 70%;
+  height: 1px;
+  background:var(--secondary-color);
+  content: "";
+  opacity: 0;
+  transition: all 0.3s;
+  margin: auto;
+}
+
+
+.nav-button-custom a:before {
+  top: 0;
+  transform: translateY(10px);
+}
+
+.nav-button-custom a:after {
+  bottom: 0;
+  transform: translateY(-10px);
+}
+
+/* Background color between the lines */
+.nav-button-custom a:before, 
+.nav-button-custom a:after {
+  background: var(--secondary-color);
+}
+
+.nav-button-custom a:hover:before, 
+.nav-button-custom a:hover:after {
+  opacity: 1;
+  transform: translateY(0px);
+}
+
+
+
+.footer {
+    position: relative;
+    padding-top: 45px;
+    background:var(--primary-color);
+  }
+  
+  .footer .newsletter {
+    position: relative;
+    max-width: 900px;
+    margin: 0 auto 45px auto;
+    padding: 30px 15px;
+    background: #000000;
+    text-align: center;
+  }
+  
+  
+.icon-custom-adjustment{
+  padding: 10px;
+  background: black;
+  width: 37%;
+  margin: auto;
+}
+
+.contact-form-box{
+  background: white;
+  padding: 60px;
+}  
+
+  .footer .footer-about,
+  .footer .footer-link,
+  .footer .footer-contact {
+    position: relative;
+    margin-bottom: 45px;
+    color: #dddddd;
+  }
+  
+  .footer .footer-about h3,
+  .footer .footer-link h3,
+  .footer .footer-contact h3{
+    position: relative;
+    margin-bottom: 20px;
+    font-size: 22px;
+    font-weight: 600;
+    color: var(--secondary-color);
+  }
+  .footer-about img{
+    width: 150px;
+  }
+  .footer .footer-link a {
+    display: block;
+    margin-bottom: 10px;
+    text-decoration: none;
+    color: var(--secondary-color);
+    transition: .3s;
+    text-transform: capitalize;
+  }
+  
+
+  
+  .footer .footer-link a:hover {
+    color:white;
+    letter-spacing: 1px;
+  }
+  
+  .footer .footer-contact p i {
+    width: 25px;
+  }
+  .footer-contact p{
+    margin-bottom: 9px;
+    font-size: 13px;
+  }
+  .footer-contact p:nth-child(2){
+    color:var(--secondary-color) ;
+  }
+
+  .footer .footer-social {
+    position: relative;
+    margin-top: 20px;
+  }
+ .card-body-custom{
+  border: transparent !important;
+  border-right:2px solid var(--secondary-color) !important;
+  border-radius: 0px !important;
+ } 
+  
+.card-body{
+  padding: 8px !important;
+}
+
+  .card-title{
+    text-transform: capitalize;
+        font-size: 16px !important;
+    font-weight: 700 !important;
+    margin-bottom: 0px !important;
+  }
+ 
+  
+  .card-image-wrapper {
+    display: flex;
+    width: 100%;
+    height: 250px;
+    /* Just to show the size of the image wrapper */
+    background-color: darkgrey;
+  }
+  
+  .card-img-top {
+    display: block;
+    width: auto;
+    max-height: 100%;
+    margin: auto;
+  }
+ 
+  .card-parent{
+    padding-top: 88px;
+  }
+  
+  @media (max-width: 768px) {
+    .footer .copyright p,
+    .footer .copyright .col-md-6:last-child p {
+      margin: 5px 0;
+      text-align: center;
+    }
+  }
+  
+  @media (max-width:991px){
+    .card-body-custom{
+      border: transparent !important;
+      border-right:2px solid transparent !important;
+      border-radius: 0px !important;
+     } 
+     .card-last-title{
+      display: none !important;
+     }
+     .card-first-title{
+      width: 100% !important;
+      text-align: center;
+     }
+  }
+.place-content-center{
+  background-image: url(./../asset/image/myaccountbackground.jpg);
+  background-position: center bottom 0px;
+  background-blend-mode: overlay;
+  background-color: rgba(0, 0, 0, 0.8) !important;
+}
+
+  /* Container for the buttons */
+.floating-buttons {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  transform: translateY(-50%);
+  z-index: 1000;
+  pointer-events: none; /* To prevent obstruction of clicks on the rest of the page */
+}
+
+/* WhatsApp Button */
+.btn-whatsapp {
+  position: fixed;
+  bottom: 30px;
+  left: 15px;
+  animation: slideInLeftToRight 1s ease-in-out forwards;
+  transition: all 0.3s ease;
+  pointer-events: all; /* Ensure button is clickable */
+}
+
+.whatsapp-icon {
+  font-size: 35px;
+  color: white;
+  padding: 15px;
+  border-radius: 50%;
+}
+
+@keyframes slideInLeftToRight {
+  from {
+    transform: translateX(-100vw); /* Start off-screen on the left */
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0); /* Slide to its original position */
+    opacity: 1;
+  }
+}
+.whatsapp-icon:hover {
+  background-color: #128c7e !important;
+}
+/* Store Button */
+.btn-store {
+  background-color: #000;
+  border-radius: 50%;
+  padding: 10px;
+  margin-right: 20px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  pointer-events: all; /* Ensure button is clickable */
+}
+.icons i::before{
+  width: 40px;
+  height: 40px;
+  padding: 10px;
+  border-radius: 50%;
+  display: block;
+  border:1px solid white;
+}
+.icon-image-custom{
+  padding: 10px;
+  margin-top: 5px;
+    border:1px solid white;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    padding-top: 8px;
+}
+.btn-store img {
+  width: 50px; /* Adjust the size of the store icon */
+  height: 50px;
+}
+
+.btn-store:hover {
+  transform: scale(1.1);
+}
+/* Store Sidebar Styles */
+.store-sidebar {
+  height: 100%; /* Full-height */
+  width: 0; /* Initial width, hidden */
+  position: fixed; /* Stay in place */
+  z-index: 1000; /* Stay on top */
+  top: 0;
+  right: 0;
+  background-color: #111; /* Black background */
+  overflow-x: hidden; /* Disable horizontal scroll */
+  transition: 0.5s; /* Transition effect */
+}
+.store-sidebar h2{
+  padding-top: 26px;
+  font-size: 18px;
+  text-align: center;
+}
+.store-sidebar a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #111;
+  display: block;
+  transition: 0.3s;
+}
+
+.store-sidebar a:hover {
+  color: #f1f1f1;
+}
+.closebtn {
+  cursor: pointer;
+  font-size: 30px;
+  color: black;
+}
+
+.store-sidebar .closebtn {
+  position: absolute;
+  right: 1px;
+  top: 0px; /* Adjust top position */
+  font-size: 36px; /* Increase font size */
+  color: #f1f1f1; /* Change color for better contrast */
+  cursor: pointer; /* Change cursor to pointer */
+  transition: color 0.3s; /* Add transition for hover effect */
+}
+.store-sidebar .closebtn:hover {
+  color: var(--primary-color); /* Change color on hover */
+}
+
+.store-sidebar {
+  position: fixed;
+  right: -250px; /* Hidden off-screen initially */
+  width: 250px; /* Width of your sidebar */
+  height: 100%;
+  background-color: white; /* Background color */
+  transition: right 0.3s; /* Smooth transition */
+  z-index: 1000; /* Make sure it’s on top */
+}
+
+
+
+.store-sidebar.open {
+  right: 0; /* Slide in */
+}
+
+.store-sidebar a:hover {
+  color: #f1f1f1;
+}
+
+
+.store-sidebar h2, .store-sidebar a {
+  display: block;
+  white-space: nowrap; /* Prevent collapse */
+}
+.floating-store-container {
+  position: fixed; /* Fixed position for the container */
+  right: 15px; /* Position from the right */
+  bottom: 15px; /* Position from the bottom */
+  z-index: 1001; /* Ensure it is on top of other elements */
+}
+
+
+
+.badge {
+  position: absolute; /* Absolute position to place badge */
+  top: -5px; /* Adjust to position the badge */
+  left: -3px; /* Adjust to position the badge */
+  background-color: var(--secondary-color); /* Badge color */
+  color: white; /* Badge text color */
+  border-radius: 50% !important;  /* Circular badge */
+  padding: 3px 6px; /* Padding for the badge */
+  font-size: 12px; /* Font size for the badge */
+  width: 22px;
+  height: 20px;
+  border-radius: 50%;
+    text-align: center; /* Center text */
+}
+
+.store-btn.move {
+  right: 245px; /* Move store button */
+}
+
+
+/* Store Sidebar */
+.store-sidebar {
+  position: fixed;
+  right: -250px; /* Hidden off-screen initially */
+  width: 250px; /* Width of the sidebar */
+  height: 100%;
+  background-color: white;
+  transition: right 0.3s ease; /* Smooth transition */
+  z-index: 1000;
+}
+
+.store-btn {
+  position: absolute;
+  bottom: 20px;
+  right: 2px;
+  padding: 10px;
+  background-color: white;
+  color: var(--secondary-color);
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: right 0.3s ease, background-color 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+}
+
+
+
+
+.login-card {
+  background-color: #fff;
+  margin-top: 55px;
+  
+  border-radius: 5px;
+}
+.form-custom-parent{
+  padding: 30px;
+  border-radius: 15px;
+  border: 1px solid #eeeeee !important;
+}
+.form-custom-parent-login form{
+  padding: 30px;
+  border-radius: 15px;
+  border: 1px solid #eeeeee !important;
+}
+.form-input {
+  width: 100%;
+  height: 50px;
+  padding-left: 15px;
+  border: none;
+  border-radius: 5px;
+  background-color: #eeeeee;
+}
+
+input:focus {
+  border:none !important;
+}
+.form-input:focus-visible{
+  outline: none !important;
+}
+
+
+
+form label{
+  color: #666;
+  font-size: 14px !important;
+}
+  
+  
+ 
+
+
+.custom-button {
+  display: inline-block !important;
+  padding: 0.3em 1em !important;
+  transition: all .2s !important;
+    background-color: var(--primary-color) !important; /* Button color */
+    border-radius: 3px !important;
+  color: var(--secondary-color
+  ) !important;
+  font-size: 20px !important;
+  border: 2px solid var(--secondary-color) !important;
+  line-height: 1.7em !important;
+  font-weight: 500 !important;
+    cursor: pointer !important;
+  position: relative !important;
+  width: 150px !important; /* Default button width */
+  text-align: center !important;
+  border-radius: 5px !important;
+  overflow: hidden !important; /* Ensures content doesn’t overflow the button */
+}
+
+.custom-button:hover {
+  transition: 0.5s ease !important;
+  width: 165px !important; /* Expanded width on hover */
+  background-color: #f2f2f2 !important; /* Optional hover color change */
+}
+
+/* Styling for the arrow */
+.arrow {
+  position: absolute;
+  left: -90px; /* Start arrow off the left side of the button */
+  top: 50%;
+  transform: translateY(-50%); /* Vertically center */
+  font-size: 18px;
+  opacity: 0; /* Hidden initially */
+  transition: opacity 0.4s ease, left 0.6s ease; /* Smooth transition for left movement */
+}
+
+.custom-button:hover .arrow {
+  opacity: 1; /* Make arrow visible on hover */
+  left: calc(100% - 30px); /* Move arrow to the right side of the button */
+}
+
+#login-btn{
+  display: inline-block !important;
+  padding: 0.3em 1em !important;
+  transition: all .2s !important;
+    background-color: var(--primary-color) !important; /* Button color */
+    border-radius: 3px !important;
+  color: var(--secondary-color
+  ) !important;
+  font-size: 20px !important;
+  border: 2px solid var(--secondary-color) !important;
+  line-height: 1.7em !important;
+  font-weight: 500 !important;
+    cursor: pointer !important;
+  position: relative !important;
+  width: 130px !important; /* Default button width */
+  text-align: center !important;
+  border-radius: 5px !important;
+  overflow: hidden !important; /* Ensures content doesn’t overflow the button */ 
+}
+#login-btn:hover{
+  background-color: #f2f2f2 !important; /* Optional hover color change */
+  }
+  .form-layout-custom{
+    padding-bottom: 130px;
+  }
+  @media (max-width:991px){
+    .form-layout-custom{
+      flex-direction: column !important;
+    }
+    .login-form-custom, .signup-form-layout{
+      width: 100% !important;
+    }
+  }
+  .form-adjustment-custom{
+    width: 100% !important;
+    margin: auto !important;
+    max-width: 89% !important;
+  }
+  .login-adjustment-custom{
+    flex-direction: row-reverse;
+    align-items: center;
+  }
+  @media (max-width:400px){
+    .login-adjustment-custom{
+      flex-direction: column-reverse !important;
+      align-items: flex-start !important;
+      gap: 15px;
+    }
+  }
+  .login-card h2{
+font-weight: 500;
+font-size: 23px;
+  }
+  .account-content-custom h1{
+    font-weight: 600;
+    font-size: 52px;
+    padding-bottom: 5px;
+    line-height: 1em;
+    color: var(--primary-color) !important;
+    text-align: center;
+  }
+.account-content-custom h4{
+  line-height: 1em;
+  font-weight: 500;
+  color: white;
+}
+.account-content-custom .small{
+  font-size: 17px;
+  color: var(--primary-color);
+}
+.account-content-custom-layout{
+  margin: auto !important;
+  width: 100%;
+  max-width: 70%;
+}
+.home-herosection-content{
+  position: relative;
+}
+.home-herosection-content h1::after{
+  content: "";
+  position: absolute;
+  background-color: rgba(239, 160, 8, .51);
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  z-index: 2;
+  transform: skew(330deg);
+}
+.hero {
+  background-image: url(./../asset/image/homeherosection.png);
+  color: white;
+  padding-right: 0px !important;
+padding:20px;
+background-repeat: no-repeat;
+background-size: cover;
+background-position: 50%;
+height: 100vh;
+}
+.hero-image2{
+  width:100% !important;
+  top:0;
+  right:0;
+}
+.hero-image2 img{
+  width: 48% !important;
+  position: absolute;
+  right: 0;
+  top: 123px;
+  right: 0 !important;
+}
+
+.hero .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 0px !important;
+
+  max-width: 100% !important;
+    margin: 0 !important;
+  height: 100%;
+   
+}
+
+
+.hero-text {
+  max-width: 50%;
+  padding-top: 110px;
+  padding-left: 120px;
+}
+
+.hero-text h1 {
+  font-weight: 700;
+  font-size: 52px;
+  color: #FFFFFF !important;
+  line-height: 1.2em;
+}
+
+.call-now {
+  color: var(--primary-color) !important;
+  border-width: 2px !important;
+  border-color: var(--primary-color);
+  background: transparent;
+  border-radius: 25px;
+  width: 30%;
+  padding: 8px;
+  text-decoration: none;
+  font-weight: 600 !important;
+  border: 1px solid;
+  text-align: center;
+}
+
+
+.hero-image-banner{
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.hero-image{
+  top: 210px;
+  left: 176px;
+}
+
+
+
+.nav-pill-main-div {
+  position: relative;
+  border-radius: 20px;
+  box-shadow: inset -1px -7px 28px 3px rgba(1, 1, 1, 0.11);
+  height: 100%;
+}
+ul.tabs{
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+}
+ ul.tabs li{
+  background: none;
+  color: #222;
+  display: inline-block;
+  padding: 10px 15px;
+  cursor: pointer;
+  transition: 0.3s ease all;
+   width: 20%;
+}
+
+ul.tabs li.current{
+  color: #222;
+  transition: 0.3s ease all;
+}
+ul.tabs li.current span{
+  color: var(--primary-color);
+  transition: 0.3s ease all;
+}
+.tab-content{
+  display: none;
+  padding: 15px;
+  transition: 0.3s ease all;
+}
+.tab-content.current{
+  display: inherit;
+  transition: 0.3s ease all;
+}
+
+
+/*------ease effect------*/
+.nav-justified > li { 
+  float: none; 
+}
+.nav-justified > li span { 
+  width: 100%; 
+}
+.customize_solution .nav-justified > li {
+    float: none;
+}
+.customize_solution span.ease-effect { 
+  text-decoration: none; 
+  -webkit-transition: 0.3s all ease; 
+  transition: 0.3s ease all; 
+}
+.customize_solution span.ease-effect:hover, .customize_solution span.ease-effect:focus,.customize_solution ul.tabs li.current span:hover,.customize_solution ul.tabs li.current span:focus { 
+  color: var(--secondary-color); 
+  transition: 0.3s ease all; 
+}
+.customize_solution span.ease-effect { 
+  letter-spacing: 2px; 
+  text-transform: uppercase; 
+  display: inline-block; 
+  text-align: center; 
+  font-weight: bold; 
+  padding: 14px 0px; 
+  border-top-right-radius: 2px; 
+  border-top-left-radius: 2px; 
+  position: relative; 
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.1); 
+}
+.customize_solution .ease-effect:before { 
+  -webkit-transition: 0.5s all ease; 
+  transition: 0.5s all ease; 
+  position: absolute; 
+  top: 0; left: 50%; 
+  right: 50%; 
+  bottom: 0; 
+  opacity: 0; 
+  content: ''; 
+  background-color: var(--primary-color); 
+  z-index: -2; 
+}
+.customize_solution .ease-effect:hover:before, .customize_solution .ease-effect:focus:before { 
+  -webkit-transition: 0.5s all ease; 
+  transition: 0.5s all ease; 
+  left: 0; 
+  right: 0; 
+  opacity: 1; 
+}
+
+.finbyz-icon {
+  height: 100px;
+  width: 100px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.banner-content-custom span{
+color: var(--secondary-color);
+  font-weight: 700;
+  font-size: 30px;
+  text-shadow: 0em 0em 0.3em rgba(0, 0, 0, 0.3);
+}
+
+.banner-content-custom h1{
+  font-size: 14px;
+  color: var(--secondary-color);
+  line-height: 1.7em;
+  width: 82%;
+  font-weight: 500;
+}
+
+@media (max-width:767px){
+  .banner-content-custom span{
+padding-top: 20px;
+font-size: 20px;
+  }
+}
+.card-button-custom {
+  position: relative;
+  display: inline-block;
+}
+
+.card-button-custom button {
+  position: relative;
+  padding: 10px 20px;
+  background-color: var(--primary-color) !important;
+  color: white;
+  border: none;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  display: flex; /* Change to flex for better centering */
+  align-items: center;
+  justify-content: center; /* Center the content horizontally */
+  gap: 10px; /* Space between text and icon */
+  overflow: hidden; /* Prevent overflow during animation */
+}
+
+.card-button-custom button .button-content {
+  display: inline-flex;
+  align-items: center;
+  transition: transform 0.3s ease; /* Smooth transition for text and icon */
+}
+
+.card-button-custom button i {
+  opacity: 0; /* Hide icon initially */
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  transform: translateX(-20px); /* Start with the icon off-screen */
+}
+
+/* Apply hover effects to the button content */
+.card-button-custom button:hover .button-content {
+  transform: translateX(-5px); /* Move the content slightly to the left on hover */
+}
+
+.card-button-custom button:hover i {
+  opacity: 1; /* Show icon on hover */
+  transform: translateX(8px); /* Move icon further into position on hover */
+}
+
+
+.nav-pill-main-div {
+  position: relative;
+  border-radius: 20px;
+  box-shadow: inset -1px -7px 28px 3px rgba(1, 1, 1, 0.11);
+  height: 100%;
+}
+
+ul.tabs {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+
+
+ul.tabs li.current {
+  color: #222;
+}
+
+ul.tabs li.current span {
+  color: var(--secondary-color);
+}
+
+.tab-content {
+  display: none; /* Hide all tab contents by default */
+  padding: 15px;
+}
+
+.tab-content.current {
+  display: block; /* Show the current tab content */
+}
+
+.finbyz-icon {
+  height: 100px;
+  width: 100px;
+}
+@media (max-width: 768px) {
+  ul.tabs {
+    flex-direction: column; /* Stack tabs vertically */
+  }
+  
+  ul.tabs li {
+    width: 100%; /* Make tabs full width */
+    text-align: center; /* Center text in tabs */
+  }
+  
+  .finbyz-icon {
+    height: 80px; /* Adjust icon size */
+    width: 80px; 
+  }
+
+  .tab-content {
+    padding: 10px; /* Reduce padding for smaller screens */
+  }
+}
+
+
+.tab-content-custom h4{
+  font-weight: 700 !important;
+  font-size: 21px !important;
+  color: var(--secondary-color) !important;
+  line-height: 1.2em !important;
+}
+.tab-content-custom p{
+  font-weight: 800;
+  font-size: 18x;
+  line-height: 1.1em;
+  color: var(--primary-color);
+}
+.tab-content-customization h4{
+  font-weight: 800;
+  font-size: 18px;
+  color: var(--secondary-color)!important;
+}
