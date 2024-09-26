@@ -1,3 +1,4 @@
+
 const currentPage = window.location.pathname;
 
 // Get all nav links
@@ -115,4 +116,15 @@ document.addEventListener("DOMContentLoaded", function() {
       void currentTabContent.offsetWidth; // Ensures the animation plays
     });
   });
+});
+
+window.addEventListener("scroll", function() {
+  const scrollPosition = window.scrollY; // Get the current scroll position
+  const image = document.querySelector('.sliding-image'); // Select the image
+
+  // Calculate a smaller translation value (move less)
+  const translateValue = Math.min(scrollPosition * 0.1, 100); // Use a smaller multiplier (0.1)
+
+  // Update the transform property to slide the image to the left
+  image.style.transform = `translateX(-${translateValue}%)`; // Move left based on scroll
 });
