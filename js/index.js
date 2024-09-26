@@ -90,22 +90,29 @@ function addToCart(itemName, itemPrice) {
   cartItems.appendChild(newItem);
 }
 
-document.addEventListener('DOMContentLoaded', function() {
-  const tabLinks = document.querySelectorAll('.tab-link');
-  const tabContents = document.querySelectorAll('.tab-content');
+document.addEventListener("DOMContentLoaded", function() {
+  const tabs = document.querySelectorAll(".tab-link");
+  const tabContents = document.querySelectorAll(".tab-content");
 
-  tabLinks.forEach(link => {
-      link.addEventListener('click', function() {
-          // Remove 'current' class from all links and contents
-          tabLinks.forEach(item => item.classList.remove('current'));
-          tabContents.forEach(content => content.classList.remove('current'));
+  tabs.forEach(tab => {
+    tab.addEventListener("click", function() {
+      const targetTab = this.getAttribute("data-tab");
 
-          // Add 'current' class to the clicked link
-          link.classList.add('current');
-          
-          // Show the corresponding tab content
-          const targetId = link.getAttribute('data-tab'); // Using data-tab
-          document.getElementById(targetId).classList.add('current');
+      // Remove current class from all tabs and hide all content
+      tabs.forEach(t => t.classList.remove("current"));
+      tabContents.forEach(tc => {
+        tc.classList.remove("current");
+        tc.style.display = 'none'; // Hide content immediately
       });
+
+      // Add current class to clicked tab and show corresponding content
+      this.classList.add("current");
+      const currentTabContent = document.getElementById(targetTab);
+      currentTabContent.classList.add("current");
+      currentTabContent.style.display = 'block'; // Show content with the animation
+
+      // Trigger reflow to reset animation
+      void currentTabContent.offsetWidth; // Ensures the animation plays
+    });
   });
 });
