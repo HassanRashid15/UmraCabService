@@ -1,0 +1,4 @@
+# Local History for Visual Studio Code
+.history/
+# VS Code files for those working on multiple tools
+.vscode/*
