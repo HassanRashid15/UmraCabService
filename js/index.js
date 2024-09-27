@@ -123,8 +123,28 @@ window.addEventListener("scroll", function() {
   const image = document.querySelector('.sliding-image'); // Select the image
 
   // Calculate a smaller translation value (move less)
-  const translateValue = Math.min(scrollPosition * 0.1, 100); // Use a smaller multiplier (0.1)
+  const translateValue = Math.min(scrollPosition * 0.04, 100); // Use a smaller multiplier (0.1)
 
   // Update the transform property to slide the image to the left
   image.style.transform = `translateX(-${translateValue}%)`; // Move left based on scroll
+});
+document.addEventListener("DOMContentLoaded", function() {
+  const counters = document.querySelectorAll(".services-title");
+
+  counters.forEach(counter => {
+    const updateCounter = () => {
+      const target = +counter.getAttribute("data-target");
+      const current = +counter.innerText;
+      const increment = target / 200; // Adjust for speed
+
+      if (current < target) {
+        counter.innerText = Math.ceil(current + increment);
+        setTimeout(updateCounter, 0); // Update every 20ms
+      } else {
+        counter.innerText = target.toLocaleString(); // Format with commas
+      }
+    };
+
+    updateCounter();
+  });
 });

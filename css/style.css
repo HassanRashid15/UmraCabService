@@ -812,6 +812,7 @@ height: 100vh;
 
 .hero-image{
   top: 210px;
+  right: 0;
   left: 176px;
 }
 
@@ -1090,4 +1091,130 @@ ul.tabs li.current span {
     font-size: 45px;
     color: var(--secondary-color) !important;
 }
+.about-company-section .container{
+  width: 100%;
+  margin: auto;
+}
+.call-section-custom i{
+  border-radius: 12px;
+  width: 40px !important;
+  height: 40px !important;
+  padding: 13.5px 12px !important;
+}
+.about-icon-content-custom h2{
+  font-size: 17px;
+  font-weight: 700;
+  margin-bottom: 2.5px; 
+}
 
+.about-icon-custom{
+  padding: 0px 3px;
+  width: 21px;
+  background-color: var(--primary-color);
+  border-radius: 4px;
+  height: 21px;
+}
+.about-icon-custom i{
+  color: var(--secondary-color);
+}
+.about-company-second-section{
+  background: #f4f4f4;
+  width: 100%;
+  margin: auto;
+  max-width: 95%;
+}
+
+.about-company-second-section-adjustment{
+  padding: 14px;
+  background: white;
+  width: 92%;
+}
+.image-container2{
+  top: 128px;
+  position: absolute;
+  left: -126px;
+}
+.image-container2 img{
+  border-radius: 140px;
+  width: 43%;
+}
+
+.image-container1 img{
+  width: 80%;
+}
+.image-container3{
+  position: absolute;
+  top: 129px;
+  transform: translateX(10px);
+  left: 72%;
+}
+.image-container4{
+  position: absolute;
+  top: 79px;
+  left: -43px;
+}
+.image-container4 img{
+  width: 4%;
+  animation: spin 4s linear infinite; /* 4s for slow rotation, can be adjusted */
+}
+@keyframes spin {
+  from {
+      transform: rotate(0deg);
+  }
+  to {
+      transform: rotate(360deg);
+  }
+}
+.image-container5{
+  position: absolute;
+  top: 0px;
+  left: 200px;
+}
+.image-container5 img{
+  animation: move 5s ease-in-out infinite; /* 3s can be adjusted for speed */
+}
+@keyframes move {
+  0% {
+      transform: translateX(0);
+  }
+  50% {
+      transform: translateX(50px); /* Move to the right */
+  }
+  100% {
+      transform: translateX(0); /* Return to the original position */
+  }
+}
+.image-container6{
+  position: absolute;
+  left: -76px;
+  bottom: 16px;
+}
+.image-container6 img{
+  width: 13%;
+  animation: move 5s ease-in-out infinite; /* 3s can be adjusted for speed */
+}
+
+#services {
+  background-image: url(./../asset/image/serviceimg.png);
+  background-size: contain;
+  border-radius: 120px 120px 120px 120px;
+  background-position: top center;
+  background-repeat: no-repeat;
+  padding-top: 95px !important;
+  padding-right: 90px !important;
+  padding-bottom: 35px !important;
+  padding-left: 90px !important;
+  margin-right: auto !important;
+  margin-left: auto !important;
+}
+.services-title{
+  font-weight: 700;
+  font-size: 41px;
+  color: var(--primary-color) !important;
+}
+.services-description {
+  font-weight: 700;
+  font-size: 23px;
+  color: #fff !important;
+  line-height: .9em;
+}
