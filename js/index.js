@@ -148,3 +148,35 @@ document.addEventListener("DOMContentLoaded", function() {
     updateCounter();
   });
 });
+
+$(document).ready(function(){
+  $('.my-slider').slick({
+    slidesToShow: 5,
+    slidesToScroll: 1,
+    arrows: true,
+    dots: false,
+    speed: 300,
+    infinite: true,
+    autoplaySpeed: 5000,
+    autoplay: false,
+    responsive: [
+  {
+    breakpoint: 991,
+    settings: {
+      slidesToShow: 3,
+    }
+  },
+  {
+    breakpoint: 767,
+    settings: {
+      slidesToShow: 1,
+    }
+  }
+]
+  });
+});
+$('.your-slider').slick({
+  prevArrow: $('.slick-prev'), // Select your custom previous arrow
+  nextArrow: $('.slick-next'), // Select your custom next arrow
+  // other options
+});
