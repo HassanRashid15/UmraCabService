@@ -1295,8 +1295,26 @@ ul.tabs li.current span {
   padding: 30px 0;
   overflow-x: hidden;
 }
+.last-form-content h1{
+  font-weight: 700;
+  font-size: 35px;
+  color:var(--primary-color);
+}
 
-
+.contact-form-box input::placeholder {
+  color: #999 !important;
+  font-weight:600;
+  }
+  .form-control-custom{
+    color: #999 !important;
+  font-weight:600;
+  }
+  .contact-form-box .form-control:focus{
+    box-shadow: 0 0 0 0.1rem #efa008 !important;
+  }
+.contact-form-box .form-control:focus-visible{
+  outline: none !important;
+}
 .cards-slider .my-slider{
   padding: 0 70px;
 }
@@ -1337,3 +1355,77 @@ ul.tabs li.current span {
   z-index: 5;
 }
 
+.navbar{
+  position: fixed  !important;
+}
+@media (max-width:992px){
+  .hero .container{
+    flex-direction: column;
+  }
+  .hero-text {
+    padding: 0px;
+  }
+  .parallelogram h6 {
+font-size: 18px;
+  }
+  .hero-image2 img {
+    width: 22% !important;
+    position: absolute;
+    right: 0;
+    top: 47px;
+    right: 0 !important;
+  }
+.hero-image{
+  top: 45px;
+  left: 425px;
+  width: 70% !important;
+}
+
+
+}
+@media (max-width:767px){
+  .hero-text h1{
+    font-size: 35px;
+  }
+  .hero-image{
+    top: 45px;
+    left: 400px;
+    width: 70% !important;
+  }
+  
+}
+@media (max-width:600px){
+  .hero-image{
+    top: 45px;
+    left: 250px;
+    width: 70% !important;
+  }
+}
+@media (min-width:601px) and (max-width:874px){
+  .hero-image{
+    top: 45px;
+    left: 360px;
+    width: 70% !important;
+  }
+}
+@media (max-width:425px){
+  .hero-image{
+    top: 45px;
+    left: 150px;
+    width: 70% !important;
+  }
+}
+@media (max-width:991px){
+  .nav-button-custom{
+display: none !important;
+  }
+  .card-parent{
+    padding-top: 0px !important;
+  }
+  .navbar{
+    position: unset !important ;
+  }
+  .navbar-toggler{
+    padding: 0px !important;
+  }
+}

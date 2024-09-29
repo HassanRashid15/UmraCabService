@@ -14,16 +14,25 @@
   </head>
   <body>
     <div class="navbar-parent">
-      <nav class="navbar navbar-expand-lg navbar-dark px-0 py-3 position-fixed z-3 w-100">
+      <nav class="navbar navbar-expand-lg navbar-dark px-0 py-3 z-3 w-100">
           <div class="container-xl mx-auto w-100" style="max-width: 89%;">
             <!-- Logo -->
             <a class="navbar-brand" href="/html/homepage.html">
               <img src="./../asset/image/umraweblogo.png" class="nav-logo-custom" alt="NavLogo">
             </a>
             <!-- Navbar toggle -->
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
+          
+            <div class="d-flex align-items-center" style="gap: 7px;">
+              <h2 class="m-0 d-flex align-items-center gap-2" style="font-size:11px; color: var(--primary-color);">
+                <i class="fa fa-shopping-cart custom-icon"></i>
+                0 Items
+              </h2>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+            </div>
+            
+            
             <!-- Collapse -->
             <div class="collapse navbar-collapse" id="navbarCollapse">
               <!-- Nav -->
@@ -1440,7 +1449,7 @@ SR,250/Hour</p>
   <h5 class="text-center pt-3" style="color: var(--primary-color);" >Contact us</h5>
   <h6 class="text-center" style="color: white;" >Connect <span style="color: var(--primary-color);">with Us Now</span></h6>
 </div>
-<div class="container mt-0 pb-5 overflow-auto">
+<div class="container mt-0 pb-5 overflow-hidden">
   <div class="row">
     <div class="col-md-4 col-sm-6 overflow-auto" data-aos="fade-right">
       <div class="card position-relative" style="border: none;">
@@ -1487,7 +1496,7 @@ SR,250/Hour</p>
       <div class="container contact-form-box my-5" style="border-radius: 30px !important;">
         <div class="row ">
           <div class="col-lg-12">
-            <div class="last-form-content">
+            <div class="last-form-content pb-5">
             <h1 class="mb-3 text-center">Book Your Taxi</h1>    
           </div>
             <form class="w-100 mx-auto" style="max-width: 85%; ">
@@ -1499,23 +1508,23 @@ SR,250/Hour</p>
                   <input type="text" class="form-control p-3 px-4 rounded-pill" id="your-surname" name="your-surname" required placeholder="Email Address">
                 </div>
                 <div class="col-md-6">
-                  <input type="email" class="form-control p-3 px-4 rounded-pill" id="your-email" name="your-email" required placeholder="Your Name">
+                  <input type="number" class="form-control p-3 px-4 rounded-pill" id="your-phoneno" name="your-phone-no" required placeholder="Phone Number">
                 </div>
                 <div class="col-md-6">
-                  <input type="text" class="form-control p-3 px-4 rounded-pill" id="your-subject" name="your-subject">
+                  <input type="text" class="form-control p-3 px-4 rounded-pill" id="your-start-destination" name="start-destination" placeholder="Start Destination">
                 </div>
                 <div class="col-md-6">
-                  <input type="text" class="form-control p-3 px-4 rounded-pill" id="your-subject" name="your-subject">
+                  <input type="text" class="form-control p-3 px-4 rounded-pill" id="your-end-destination" name="end-destination" placeholder="End Destination">
                 </div>
                 <div class="col-md-6">
-                  <input type="text" class="form-control p-3 px-4 rounded-pill" id="your-subject" name="your-subject">
+                  <input type="text" class="form-control p-3 px-4 rounded-pill" id="your-date-travel" name="date-travel" placeholder="Date Of Travel">
                 </div>
                 <div class="col-md-6">
-                  <input type="text" class="form-control p-3 px-4 rounded-pill" id="your-subject" name="your-subject">
+                  <input type="text" class="form-control p-3 px-4 rounded-pill" id="your-time-travel" name="time-travel" placeholder="Time Of Travel">
                 </div>
                 <div class="col-md-6">
-                  <select class="form-control p-3 px-4 rounded-pill" id="your-subject" name="your-subject">
-                    <option value="" disabled selected>Select a subject</option>
+                  <select class="form-control p-3 px-4 rounded-pill" id="your-subject-title" name="your-subject-title" style="color: #999 !important; font-weight: 600;">
+                    <option value="" class="form-control-custom" selected >Select a Vehicle</option>
                     <option value="subject1">Subject 1</option>
                     <option value="subject2">Subject 2</option>
                     <option value="subject3">Subject 3</option>
@@ -1523,7 +1532,7 @@ SR,250/Hour</p>
                   </select>
                 </div>
                 <div class="col-12">
-                  <textarea class="form-control p-3 px-4 rounded-pill" style="border-radius: 15px !important;" id="your-message" name="your-message" rows="5" required></textarea>
+                  <textarea class="form-control p-3 px-4 rounded-pill" style="border-radius: 15px !important; color: #999 !important; font-weight: 600 !important;" id="your-message" name="your-message" rows="5" required placeholder="Write your Message..."></textarea>
                 </div>
                 <div class="col-12">
                   <div class="row">
